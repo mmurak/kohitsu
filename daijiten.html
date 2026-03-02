@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>淡交社『古筆大事典』検索</title>
+		<link rel="shortcut icon" href="redKiwiBird.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="./daijiten.css">
+	</head>
+	<body>
+		<h2>淡交社『古筆大事典』（1979）検索</h2>
+			<select class="toc-field" id="TOCSel" onchange="tocChange(this.value);"/>
+			</select>
+			<input type="text" id="EntryField" class="entry-field" placeholder="検索語はひらがなで、頁数は数字で入力" autocomplete="off"/>
+			<br/>
+			<input type="button" id="SearchButton" class="buttons" value="見出し語検索（Enter）" onclick="indexSearch();"/>
+			<input type="button" id="clearButton" class="buttons" value="クリア（Escape）" onclick="clearField();"/>
+			<br>
+			<input type="button" id="ASearchButton" class="buttons" value="古筆筆者名索引検索" onclick="aIndexSearch();"/>
+			<br>
+			<input type="button" id="CSearchButton" class="buttons" value="内容分類索引検索" onclick="cIndexSearch();"/>
+			<br>
+			<a id="HimaLink" href="javascript:iAmBored();">どこでもいいのでページを開く</a>
+		<div class="footer">
+			使用するには国立国会図書館デジタルコレクションの<a href="https://www.ndl.go.jp/jp/use/digital_transmission/individuals_index.html">個人向けデジタル化資料送信サービス</a>に登録、ログインしておく必要があります。
+		</div>
+		<script src="./assets/fullIndex.js"></script>
+		<script src="./scripts/regulatorNeo.js"></script>
+		<script src="./scripts/daijiten.js"></script>
+	</body>
+</html>
+
